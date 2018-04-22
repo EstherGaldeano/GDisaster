@@ -8,6 +8,7 @@ TagManager:
   - Destination
   - Portal
   - CamDirection
+  - Weapon
   layers:
   - Default
   - TransparentFX
