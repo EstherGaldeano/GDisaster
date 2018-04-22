@@ -19,18 +19,20 @@ public class EnemyMove : MonoBehaviour {
 	
 	}
 	
-	// Update is called once per frame
 	void Update () {
+        
+        //if the player is dead, the enemies have to stay idle not following her
 
-	//	if (!GameManager.instance.GameOver && enemyHealth.IsAlive) {
-			nav.SetDestination (player.position);
-	//	} else if ((!GameManager.instance.GameOver || GameManager.instance.GameOver) && !enemyHealth.IsAlive) {
-		//	nav.enabled = false;
-		
-	//	} else {
-	//		nav.enabled = false;
-			//anim.Play ("Idle");
-	//	}
-	
-	}
+		if (!GameManager.instance.GameOver/* && enemyHealth.IsAlive*/) {
+
+            nav.SetDestination (player.position);
+            //	} else if ((!GameManager.instance.GameOver || GameManager.instance.GameOver) && !enemyHealth.IsAlive) {
+            //	nav.enabled = false;
+
+        } else {//debería pararse pero no funciona :s
+            nav.enabled = false;
+            anim.Play("Idle");
+        }
+
+    }
 }

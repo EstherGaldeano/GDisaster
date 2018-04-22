@@ -4,103 +4,109 @@ using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour {
 
-	[SerializeField] private float moveSpeed = 10.0f;
-	[SerializeField] private LayerMask layerMask;
+    [SerializeField]
+    private float moveSpeed = 10.0f;
+    [SerializeField]
+    private LayerMask layerMask;
 
-	private CharacterController characterController;
-	private Vector3 currentLookTarget = Vector3.zero;
-	private Animator anim;
-	private BoxCollider[] swordColliders;
-	private GameObject fireTrail;
-	private ParticleSystem fireTrailParticles;
+    private CharacterController characterController;
+    private Vector3 currentLookTarget = Vector3.zero;
+    private Animator anim;
+    private BoxCollider[] swordColliders;
+    private GameObject fireTrail;
+    private ParticleSystem fireTrailParticles;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
 
         characterController = GetComponent<CharacterController>();
-    //    fireTrail = GameObject.FindWithTag ("Fire") as GameObject;
-	//	fireTrail.SetActive (false);
-		anim = GetComponent<Animator> ();
-	//	swordColliders = GetComponentsInChildren<BoxCollider> ();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        //    fireTrail = GameObject.FindWithTag ("Fire") as GameObject;
+        //	fireTrail.SetActive (false);
+        anim = GetComponent<Animator>();
+        //	swordColliders = GetComponentsInChildren<BoxCollider> ();
+    }
 
-		//if(!GameManager.instance.GameOver) {
-			
-			Vector3 moveDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
-			characterController.SimpleMove (moveDirection * moveSpeed);
-        
-			if (moveDirection == Vector3.zero) {
-				anim.SetBool ("IsWalking", false);
-			} else {
-				anim.SetBool ("IsWalking", true);
-			}
+    // Update is called once per frame
+    void Update() {
 
-			if (Input.GetMouseButtonDown(0)) {
-				anim.Play ("DoubleChop");
-			}
+        if (!GameManager.instance.GameOver) {
 
-			if (Input.GetMouseButtonDown(1)) {
-				anim.Play ("SpinAttack");
-			}
-		}
-	//}
+            Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            characterController.SimpleMove(moveDirection * moveSpeed);
 
-	void FixedUpdate() { 
+            if (moveDirection == Vector3.zero) {
+                anim.SetBool("IsWalking", false);
+            } else {
+                anim.SetBool("IsWalking", true);
+            }
 
-		//if (!GameManager.instance.GameOver) {
+            if (Input.GetMouseButtonDown(0)) {
+                anim.Play("DoubleChop");
+            }
 
-			RaycastHit hit;
-			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-        
+            if (Input.GetMouseButtonDown(1)) {
+                anim.Play("SpinAttack");
+            }
+        }
+    }
 
-			Debug.DrawRay (ray.origin, ray.direction * 500, Color.blue);
 
-			if(Physics.Raycast(ray, out hit, 500, layerMask, QueryTriggerInteraction.Ignore)) {
-				if (hit.point != currentLookTarget) {
-					currentLookTarget = hit.point;
-				}
+    void FixedUpdate() {
 
-				Vector3 targetPosition = new Vector3 (hit.point.x, transform.position.y, hit.point.z);
-				Quaternion rotation = Quaternion.LookRotation (targetPosition - transform.position);
-				transform.rotation = Quaternion.Lerp (transform.rotation, rotation, Time.deltaTime * 10f);
+        if (!GameManager.instance.GameOver) {
 
-			}
-		}
-	//}
-    /*
-	public void BeginAttack() {
-		foreach (var weapon in swordColliders) {
-			weapon.enabled = true;
-		}
-	}
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-	public void EndAttack() {
-		foreach (var weapon in swordColliders) {
-			weapon.enabled = false;
-		}
-	}
 
-	public void SpeedPowerUp() {
+            Debug.DrawRay(ray.origin, ray.direction * 500, Color.blue);
 
-		StartCoroutine (fireTrailRoutine ());
-	}
+            if (Physics.Raycast(ray, out hit, 500, layerMask, QueryTriggerInteraction.Ignore)) {
+                if (hit.point != currentLookTarget) {
+                    currentLookTarget = hit.point;
+                }
 
-	IEnumerator fireTrailRoutine() {
+                Vector3 targetPosition = new Vector3(hit.point.x, transform.position.y, hit.point.z);
+                Quaternion rotation = Quaternion.LookRotation(targetPosition - transform.position);
+                transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 10f);
 
-		fireTrail.SetActive (true);
-		moveSpeed = 10f;
-		yield return new WaitForSeconds (10f);
-		moveSpeed = 6f;
-		fireTrailParticles = fireTrail.GetComponent<ParticleSystem> ();
-		var em = fireTrailParticles.emission;
-		em.enabled = false;
-		yield return new WaitForSeconds (3f);
-		em.enabled = true;
-		fireTrail.SetActive (false);
+            }
+        }
 
-	}*/
 
-}
+    }
+        /*
+        public void BeginAttack() {
+            foreach (var weapon in swordColliders) {
+                weapon.enabled = true;
+            }
+        }
+
+        public void EndAttack() {
+            foreach (var weapon in swordColliders) {
+                weapon.enabled = false;
+            }
+        }
+
+        public void SpeedPowerUp() {
+
+            StartCoroutine (fireTrailRoutine ());
+        }
+
+        IEnumerator fireTrailRoutine() {
+
+            fireTrail.SetActive (true);
+            moveSpeed = 10f;
+            yield return new WaitForSeconds (10f);
+            moveSpeed = 6f;
+            fireTrailParticles = fireTrail.GetComponent<ParticleSystem> ();
+            var em = fireTrailParticles.emission;
+            em.enabled = false;
+            yield return new WaitForSeconds (3f);
+            em.enabled = true;
+            fireTrail.SetActive (false);
+
+        }*/
+
+    }
+
