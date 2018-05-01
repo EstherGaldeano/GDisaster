@@ -19,7 +19,8 @@ public class PlayerController : MonoBehaviour {
     // Use this for initialization
     void Start() {
 
-        characterController = GetComponent<CharacterController>();
+        characterController =  this.GetComponent<CharacterController>();
+       
         //    fireTrail = GameObject.FindWithTag ("Fire") as GameObject;
         //	fireTrail.SetActive (false);
         anim = GetComponent<Animator>();
@@ -33,6 +34,8 @@ public class PlayerController : MonoBehaviour {
 
             Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             characterController.SimpleMove(moveDirection * moveSpeed);
+
+
 
             if (moveDirection == Vector3.zero) {
                 anim.SetBool("IsWalking", false);
