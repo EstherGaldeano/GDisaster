@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour {
 
 	[SerializeField] int startingHealth = 100; //Hero Health
 	[SerializeField] float timeSinceLastHit = 2f; 
-	//[SerializeField] Slider healthSlider;
+	[SerializeField] Slider healthSlider; //health bar
 
 	private float timer = 0f; //time bwtween hits
 	private CharacterController characterController; //if the hero dies, it has to stop moving
@@ -28,9 +28,9 @@ public class PlayerHealth : MonoBehaviour {
         }
     }
 
-    //void Awake() {
-    //	Assert.IsNotNull (healthSlider);
-    //}
+    void Awake() {
+        Assert.IsNotNull(healthSlider);
+    }
 
 
     void Start () {
@@ -71,7 +71,7 @@ public class PlayerHealth : MonoBehaviour {
             GameManager.instance.PlayerHit(currentHealth);
             anim.Play("Hurt");
             currentHealth -= 10;
-            //      healthSlider.value = currentHealth;
+            healthSlider.value = currentHealth;//every hit decrease the health bar
             audio.PlayOneShot(audio.clip); //sound when we're hited
             // blood.Play();
         }
