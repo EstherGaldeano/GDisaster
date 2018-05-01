@@ -124,8 +124,9 @@ GameObject:
   - component: {fileID: 130081581}
   - component: {fileID: 130081580}
   - component: {fileID: 130081579}
+  - component: {fileID: 130081585}
   - component: {fileID: 130081583}
-  - component: {fileID: 130081584}
+  - component: {fileID: 130081578}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -133,6 +134,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &130081578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130081577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e5bc8eac9f60d44b5d9d7e3a1558af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedH: 2
+  speedV: 2
 --- !u!81 &130081579
 AudioListener:
   m_ObjectHideFlags: 0
@@ -190,7 +204,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 130081577}
   m_LocalRotation: {x: -0, y: -0.9999376, z: -0, w: 0.011177044}
-  m_LocalPosition: {x: -16.61, y: 22.6, z: 20.15}
+  m_LocalPosition: {x: -16.61, y: 25.27, z: 20.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -206,26 +220,27 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 6
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &130081584
-CapsuleCollider:
+  m_Center: {x: 0, y: -3.5, z: 0}
+--- !u!114 &130081585
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 130081577}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66d8752ca2b0a04db4e14f346c57888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  jumpSpeed: 8
+  gravity: 20
 --- !u!1001 &272176924
 Prefab:
   m_ObjectHideFlags: 0
