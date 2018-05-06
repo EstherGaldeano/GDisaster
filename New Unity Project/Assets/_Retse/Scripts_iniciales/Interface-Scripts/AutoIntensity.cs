@@ -25,7 +25,7 @@ public class AutoIntensity : MonoBehaviour
     public Vector3 dayRotateSpeed;
     public Vector3 nightRotateSpeed;
 
-    float skySpeed = 1;
+    float skySpeed =(float) 0.6;
 
 
     Light mainLight;
@@ -68,8 +68,8 @@ public class AutoIntensity : MonoBehaviour
         else
             transform.Rotate(nightRotateSpeed * Time.deltaTime * skySpeed);
 
-        if (Input.GetKeyDown(KeyCode.Q)) skySpeed *= 0.5f;
-        if (Input.GetKeyDown(KeyCode.E)) skySpeed *= 2f;
+        //if (Input.GetKeyDown(KeyCode.Q)) skySpeed *= 0.5f;
+        //if (Input.GetKeyDown(KeyCode.E)) skySpeed *= 2f;
 
 
     }
