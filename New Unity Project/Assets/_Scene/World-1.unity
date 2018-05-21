@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1834530161}
-  m_IndirectSpecularColor: {r: 0.4339374, g: 0.50668705, b: 0.57746625, a: 1}
+  m_IndirectSpecularColor: {r: 0.46632463, g: 0.53357875, b: 0.58817416, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1020,6 +1020,10 @@ Prefab:
     - target: {fileID: 114832691553687904, guid: ea9de8683b78f9e40becb5a742196a25,
         type: 2}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909627723941340, guid: ea9de8683b78f9e40becb5a742196a25, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8866,7 +8870,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &455105380
 AudioListener:
   m_ObjectHideFlags: 0
@@ -36201,7 +36205,7 @@ MonoBehaviour:
   RotationSmoothing: 1
   MovementSmoothingValue: 25
   RotationSmoothingValue: 5
-  MoveSensitivity: 2
+  MoveSensitivity: 1
 --- !u!1 &2040103760
 GameObject:
   m_ObjectHideFlags: 0

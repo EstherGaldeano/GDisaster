@@ -17,7 +17,8 @@ public class InventoryInterface : MonoBehaviour {
             if (gamePaused)
             {
                 //si lo esta lo abrimos
-                closeInv();                
+                closeInv();
+                Time.timeScale = 1f;
             }
             else
             {
