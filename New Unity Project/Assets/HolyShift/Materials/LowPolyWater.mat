@@ -10,7 +10,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: c5617dffeb9944fa3a50334e9f9f8c5e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -40,7 +40,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DistortionTex:
         m_Texture: {fileID: 2800000, guid: b01980ff2ae464fadaac446f66f5558f, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0.5, y: 0.5}
         m_Offset: {x: 0, y: 0}
     - _Fresnel:
         m_Texture: {fileID: 2800000, guid: 5b5c5575fd4c74abd9f7b30862fb76a3, type: 3}
@@ -121,7 +121,7 @@ Material:
     - _NormalsDisplacement: 0
     - _ReflDistort: 0.9267696
     - _RefrDistort: 1.4393286
-    - _Shininess: 318.04
+    - _Shininess: 112.2
     - _ShoreTiling: 56.862743
     - _Speed: 0.4137931
     - _TargetValue: 0
@@ -140,7 +140,7 @@ Material:
     - WaveSpeed: {r: 1.086165, g: 4.440575, b: 12.105146, a: -3.0206447}
     - _AnimationDirection: {r: 0, g: 4, b: 2, a: -1}
     - _AnimationTiling: {r: 0.04582553, g: 0.0182, b: 0.045714468, a: 0.027129691}
-    - _BaseColor: {r: 0.24567473, g: 0.46407616, b: 0.52205884, a: 0.353}
+    - _BaseColor: {r: 0.17517292, g: 0.6642691, b: 0.7941176, a: 0.622}
     - _BumpDirection: {r: 2, g: 1, b: -1, a: 1.5}
     - _BumpMap_ST: {r: 1, g: 1, b: 0, a: 0}
     - _BumpTiling: {r: 0.05, g: 0.05, b: 0.05, a: 0.05}
@@ -149,7 +149,7 @@ Material:
     - _DepthColorFade: {r: 0.8880597, g: 0.27834705, b: 0.44463244, a: 0.22352941}
     - _Displacement: {r: 6.6371665, g: 20.353983, b: -1, a: -0.681416}
     - _DisplacementXz: {r: 0.6499999, g: -2.9203715, b: 1.6599998, a: -3.9363046}
-    - _DistortParams: {r: 0, g: 0.5, b: 1.8530641, a: -0.17}
+    - _DistortParams: {r: 0, g: 0.5, b: 4, a: -0.17}
     - _Extinction: {r: 4.5, g: 75, b: 300, a: 1}
     - _Foam: {r: 0.42666668, g: 0.48666668, b: 0, a: 0}
     - _FoamWaveParams: {r: 0, g: 0.24918434, b: 3.3395782, a: 1}
@@ -163,7 +163,7 @@ Material:
     - _HorizonColor: {r: 0.052907113, g: 0.24486735, b: 0.2835821, a: 1}
     - _InvFadeParemeter: {r: 1, g: 0.71, b: 2.48, a: 0}
     - _MainTex_ST: {r: 1, g: 1, b: 0, a: 0}
-    - _ReflectionColor: {r: 0, g: 0, b: 0, a: 0.559}
+    - _ReflectionColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectionTex_ST: {r: 1, g: 1, b: 0, a: 0}
     - _ReflectiveColorCube_ST: {r: 1, g: 1, b: 0, a: 0}
     - _ReflectiveColor_ST: {r: 1, g: 1, b: 0, a: 0}
@@ -178,7 +178,7 @@ Material:
     - _UnderwaterColor: {r: 0.6950323, g: 0.89552236, b: 0.7502397, a: 1}
     - _WaveOffset: {r: 1, g: 1, b: -0.01, a: -0.01}
     - _WaveScale4: {r: 0.1, g: 0.1, b: 0.01, a: 0.01}
-    - _WavesColor: {r: 0.6691177, g: 0.71247464, b: 1, a: 0.347}
+    - _WavesColor: {r: 0.8308824, g: 0.8308824, b: 0.8308824, a: 0.347}
     - _WorldLightDir: {r: -0.030375138, g: -0.20139083, b: -0.97903997, a: 0}
 --- !u!1002 &2100001
 EditorExtensionImpl:
