@@ -47,14 +47,23 @@ public class PlayerController : MonoBehaviour {
             }
 
             if (Input.GetMouseButtonDown(0)) {
-                anim.Play("DoubleChop");
+                anim.Play("HandedBlock");
             }
 
             if (Input.GetMouseButtonDown(1)) {
                 anim.Play("SpinAttack");
             }
+            if (Input.GetMouseButton(1)) {
+                anim.Play("DoubleChop");
+            }
 
-            interaccion();
+            if (Input.GetKeyDown("space")) { 
+                anim.Play("Jump");
+
+        }
+
+
+        interaccion();
         }
     }
 
