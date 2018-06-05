@@ -1,5 +1,17 @@
 # GDisaster
 
+CONTROLES DEL JUEGO
+
+W A S D --> Movimiento
+Space --> Saltar
+Botón izquierdo --> Ataque simple
+Botón derecho --> Bloqueo
+Scroll --> Ataque giratorio
+
+Correr --> movimiento + shift (pendiente configurar animación)
+
+
+
 #LA RAMA DONDE DERIVARAN LAS DEMAS ES LA DE vBETA
 
 #INFORMACION SOBRE LAS TABLAS:
