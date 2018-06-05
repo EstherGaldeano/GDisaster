@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1834530161}
-  m_IndirectSpecularColor: {r: 0.188355, g: 0.25220487, b: 0.31838125, a: 1}
+  m_IndirectSpecularColor: {r: 0.17328326, g: 0.23696826, b: 0.31064585, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -29620,7 +29620,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4425399277057986, guid: 83265f0b233be164da041a068e28ff55, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 241.58
+      value: 148.1
       objectReference: {fileID: 0}
     - target: {fileID: 4425399277057986, guid: 83265f0b233be164da041a068e28ff55, type: 2}
       propertyPath: m_LocalPosition.y
@@ -29628,7 +29628,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4425399277057986, guid: 83265f0b233be164da041a068e28ff55, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 145.23
+      value: 142.8
       objectReference: {fileID: 0}
     - target: {fileID: 4425399277057986, guid: 83265f0b233be164da041a068e28ff55, type: 2}
       propertyPath: m_LocalRotation.x
@@ -29670,6 +29670,11 @@ Prefab:
     - target: {fileID: 1779366182092582, guid: 83265f0b233be164da041a068e28ff55, type: 2}
       propertyPath: m_Name
       value: Monstruo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691669732921968, guid: 83265f0b233be164da041a068e28ff55,
+        type: 2}
+      propertyPath: startingHealth
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83265f0b233be164da041a068e28ff55, type: 2}

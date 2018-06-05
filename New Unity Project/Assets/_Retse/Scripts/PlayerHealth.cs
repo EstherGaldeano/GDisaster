@@ -68,9 +68,18 @@ public class PlayerHealth : MonoBehaviour {
 
         if (currentHealth > 0)
         {
+          
+            if (Input.GetMouseButtonDown(1)) {
+              currentHealth -= 1;
+
+            } else {
+
+                currentHealth -= 10;
+            }
+
             GameManager.instance.PlayerHit(currentHealth);
             anim.Play("Hurt");
-            currentHealth -= 10;
+
             healthSlider.value = currentHealth;//every hit decrease the health bar
             audio.PlayOneShot(audio.clip); //sound when we're hited
             // blood.Play();

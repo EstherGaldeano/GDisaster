@@ -13,6 +13,7 @@ public class EnemyAttack : MonoBehaviour {
     private bool playerInRange; //keep on track whether we are within the especified range
     private BoxCollider[] weaponColliders; //colliders of the weapons
     private EnemyHealth enemyHealth;
+    private int contadorAtaques;
 
 
     void Start() {
@@ -49,9 +50,19 @@ public class EnemyAttack : MonoBehaviour {
 IEnumerator attack() {
 
     if (playerInRange && !GameManager.instance.GameOver && enemyHealth.IsAlive) {
+           
+      //      if (contadorAtaques < 4) {
+                anim.Play("Attack");
+                yield return new WaitForSeconds(timeBetweenAttacks);
+                contadorAtaques++; 
+          //  }
 
-        anim.Play("Attack");
-        yield return new WaitForSeconds(timeBetweenAttacks);
+
+            //if (contadorAtaques > 4) {
+            //    anim.Play("HeavyAttack");
+            //    yield return new WaitForSeconds(timeBetweenAttacks);
+            //    contadorAtaques = 0;
+            //}
     }
 
     yield return null;
