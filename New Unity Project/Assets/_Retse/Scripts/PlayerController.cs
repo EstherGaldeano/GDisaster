@@ -42,8 +42,11 @@ public class PlayerController : MonoBehaviour {
             
             if (moveDirection == Vector3.zero) {
                 anim.SetBool("IsWalking", false);
+
+               
             } else {
                 anim.SetBool("IsWalking", true);
+
             }
 
             if (Input.GetMouseButtonDown(1)) {
