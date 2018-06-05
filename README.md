@@ -7,6 +7,7 @@ W A S D --> Movimiento
 Space --> Saltar
 
 Botón izquierdo --> Ataque simple
+
 Botón derecho --> Bloqueo
 
 Scroll --> Ataque giratorio
