@@ -46,18 +46,23 @@ public class PlayerController : MonoBehaviour {
                 anim.SetBool("IsWalking", true);
             }
 
-            if (Input.GetMouseButtonDown(0)) {
+            if (Input.GetMouseButtonDown(1)) {
+                anim.SetBool("BlockPressed", true);
                 anim.Play("HandedBlock");
+
+            } else {
+                anim.SetBool("BlockPressed", false);
             }
 
-            if (Input.GetMouseButtonDown(1)) {
-                anim.Play("SpinAttack");
-            }
-            if (Input.GetMouseButton(1)) {
+            if (Input.GetMouseButtonDown(0)) {
                 anim.Play("DoubleChop");
             }
+            if ((Input.GetAxis("Mouse ScrollWheel") > 0f)|| (Input.GetAxis("Mouse ScrollWheel") < 0f)) {
+                anim.Play("SpinAttack");
+               
+            }
 
-            if (Input.GetKeyDown("space")) { 
+            if (Input.GetKeyDown("space")) {              
                 anim.Play("Jump");
 
         }
