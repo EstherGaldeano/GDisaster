@@ -14,7 +14,7 @@ Scroll --> Ataque giratorio
 
 Correr --> movimiento + shift (pendiente configurar animación)
 
-
+*********************************************************************************************
 
 #LA RAMA DONDE DERIVARAN LAS DEMAS ES LA DE vBETA
 
