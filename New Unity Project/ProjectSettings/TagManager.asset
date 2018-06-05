@@ -10,6 +10,7 @@ TagManager:
   - CamDirection
   - Weapon
   - PlayerWeapon
+  - Interactable Object
   layers:
   - Default
   - TransparentFX
