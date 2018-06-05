@@ -113,7 +113,12 @@ ModelImporter:
     7400000: Take 001
     9500000: //RootNode
     13700000: Orc Ranger
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Orc_Ranger
+    second: {fileID: 2100000, guid: 065bc5f0a706d4e50936da78acd5ad81, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
