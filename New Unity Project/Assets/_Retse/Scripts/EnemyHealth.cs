@@ -24,9 +24,13 @@ public class EnemyHealth : MonoBehaviour {
 		get {return isAlive; }
 	}
 
+    public int Getlife {
+        get { return currentHealth; }
+    }
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 
 		GameManager.instance.RegisterEnemy (this);
 		rigidBody = GetComponent<Rigidbody> ();
@@ -69,8 +73,8 @@ public class EnemyHealth : MonoBehaviour {
 
 		if (currentHealth > 0) { //if is alive
 			audio.PlayOneShot (audio.clip); //play hurt sound
-			anim.Play ("Hurt"); //do hurt animation
-			currentHealth -= 10;
+			anim.Play ("Hurt");
+            currentHealth -= 10;
 
 		}
         //if the enemy dies, change isAlive to false and do KillEnemy method
