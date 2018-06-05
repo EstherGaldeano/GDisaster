@@ -76,7 +76,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             if(Input.GetKeyUp(KeyCode.Escape))
             {
-                m_cursorIsLocked = false;
+             //   m_cursorIsLocked = false;
             }
             else if(Input.GetMouseButtonUp(0))
             {
@@ -85,8 +85,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if (m_cursorIsLocked)
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+               // Cursor.lockState = CursorLockMode.Locked;
+              //  Cursor.visible = false;
             }
             else if (!m_cursorIsLocked)
             {
