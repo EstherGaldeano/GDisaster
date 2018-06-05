@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour {
 
 	void Awake() {
 
-		Assert.IsNotNull (target);
+		//Assert.IsNotNull (target);
 	}
 
 	// Use this for initialization

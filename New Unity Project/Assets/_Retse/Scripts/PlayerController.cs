@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
     private BoxCollider[] swordColliders;
     private GameObject fireTrail;
     private ParticleSystem fireTrailParticles;
+    public Interactible focus;
 
     // Use this for initialization
     void Start() {
@@ -47,9 +48,61 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetMouseButtonDown(1)) {
                 anim.Play("SpinAttack");
             }
+
+            interaccion();
         }
     }
 
+    #region inventario
+
+    private void interaccion()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            Debug.Log("interactuando");
+
+            if (Physics.Raycast(ray, out hit, 5))
+            {
+                //check interactible
+                Interactible interactible = hit.collider.GetComponent<Interactible>();
+
+                if (interactible != null)
+                {
+                    SetFocus(interactible);
+                }
+            }
+
+        }
+    }
+
+    void SetFocus(Interactible newFocus)
+    {
+        if (newFocus != focus)
+        {
+            if (focus != null)
+            {
+                focus.DeFocused();
+            }
+
+            focus = newFocus;
+        }
+
+        newFocus.OnFocused(transform);
+    }
+
+    void RemoveFocus()
+    {
+        if (focus != null)
+        {
+            focus.DeFocused();
+        }
+        focus = null;
+    }
+
+    #endregion
 
     void FixedUpdate() {
 
