@@ -13,19 +13,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: HeroDie
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: PlayerInRange
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -343,16 +343,16 @@ AnimatorStateMachine:
     m_Position: {x: 348, y: 108, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102886001816725914}
-    m_Position: {x: -276, y: 108, z: 0}
+    m_Position: {x: -96, y: 348, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102438642066314110}
-    m_Position: {x: 204, y: -72, z: 0}
+    m_Position: {x: 96, y: -144, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102853922699199018}
-    m_Position: {x: 516, y: -48, z: 0}
+    m_Position: {x: 348, y: -120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102475583444033838}
-    m_Position: {x: -264, y: 12, z: 0}
+    m_Position: {x: -180, y: -144, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1101953554906348992}
@@ -360,8 +360,8 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: -540, y: 60, z: 0}
-  m_EntryPosition: {x: 252, y: 264, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_AnyStatePosition: {x: -336, y: 72, z: 0}
+  m_EntryPosition: {x: 372, y: 324, z: 0}
+  m_ExitPosition: {x: 600, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102177921645333380}

@@ -2307,6 +2307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 20
   timeSinceLastHit: 2
+  healthSlider: {fileID: 0}
 --- !u!114 &114532221300315798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2318,10 +2319,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c543dbb58354b4ba051eb26cadfd47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+  focus: {fileID: 0}
 --- !u!137 &137053811892389878
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
