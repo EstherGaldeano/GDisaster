@@ -52,6 +52,9 @@ public class GameManager : MonoBehaviour {
     private List<EnemyHealth> enemies = new List<EnemyHealth>();
     private List<EnemyHealth> killedEnemies = new List<EnemyHealth>();
 
+    private List<EnemyHealth2> enemies2 = new List<EnemyHealth2>();
+    private List<EnemyHealth2> killedEnemies2 = new List<EnemyHealth2>();
+
 
 
     public bool GameOver {
@@ -72,6 +75,18 @@ public class GameManager : MonoBehaviour {
     public void KilledEnemy(EnemyHealth enemy) {
         killedEnemies.Add(enemy);
     }
+
+
+
+    public void RegisterEnemy(EnemyHealth2 enemy2) {
+        enemies2.Add(enemy2);
+    }
+
+    public void KilledEnemy(EnemyHealth2 enemy2) {
+        killedEnemies2.Add(enemy2);
+    }
+
+
 
     //public void RegisterPowerUp() {
     //    powerups++;

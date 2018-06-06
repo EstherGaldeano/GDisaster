@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -71,6 +72,8 @@ public class PlayerController : MonoBehaviour {
                 anim.Play("Jump");
 
         }
+
+
 
 
         interaccion();
@@ -165,6 +168,12 @@ public class PlayerController : MonoBehaviour {
                 weapon.enabled = false;
             }
         }
- 
+
+
+    void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "Portal")
+            SceneManager.LoadScene("World-1");
+    }
+
 }
 
