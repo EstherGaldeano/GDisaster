@@ -11,6 +11,7 @@ TagManager:
   - Weapon
   - PlayerWeapon
   - Interactable Object
+  - Enemy
   layers:
   - Default
   - TransparentFX

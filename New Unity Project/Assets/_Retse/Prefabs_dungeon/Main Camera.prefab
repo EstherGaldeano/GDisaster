@@ -21,18 +21,18 @@ GameObject:
   - component: {fileID: 4205151551091146}
   - component: {fileID: 20168683380213812}
   - component: {fileID: 124764143926686270}
-  - component: {fileID: 81919067726974462}
   - component: {fileID: 114713530547332206}
   - component: {fileID: 114268612688526216}
   - component: {fileID: 65714154681720464}
   - component: {fileID: 114832691553687904}
+  - component: {fileID: 81149422516272668}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4205151551091146
 Transform:
   m_ObjectHideFlags: 1
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!81 &81919067726974462
+--- !u!81 &81149422516272668
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -139,6 +139,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1276360598272172, guid: 56c6c8c9f7e9f9141a604a51e878e27b,
     type: 2}
+  miniMapUI: {fileID: 0}
+  menu: {fileID: 0}
+  inventoryUI: {fileID: 0}
+  wikiUI: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!124 &124764143926686270
 Behaviour:
   m_ObjectHideFlags: 1

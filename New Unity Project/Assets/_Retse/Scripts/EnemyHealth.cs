@@ -62,7 +62,6 @@ public class EnemyHealth : MonoBehaviour {
 		if(timer >= timeSinceLastHit && !GameManager.instance.GameOver) {
 			if (other.tag == "PlayerWeapon") {
 				takeHit ();
-		//		blood.Play ();
 				timer = 0f;
 			}
 		}
