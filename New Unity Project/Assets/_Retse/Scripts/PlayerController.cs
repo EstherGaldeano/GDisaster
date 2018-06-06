@@ -170,6 +170,12 @@ public class PlayerController : MonoBehaviour {
             SceneManager.LoadScene("Demon Cave");
         }
 
+
+        if (other.gameObject.tag == "Ice") { 
+            SceneManager.LoadScene("Ice");
+        }
+
+
     }
 }
 
