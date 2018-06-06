@@ -14,8 +14,7 @@ public class PlayerHealth : MonoBehaviour {
 	private Animator anim;
 	private int currentHealth;
     private AudioSource audio;
-    //private ParticleSystem blood;
-
+ 
     public int CurrentHealth
     {
         get { return currentHealth; }
@@ -39,7 +38,7 @@ public class PlayerHealth : MonoBehaviour {
 	    characterController = GetComponent<CharacterController> ();
 	    currentHealth = startingHealth;
         audio = GetComponent<AudioSource>();
-        //	blood = GetComponentInChildren<ParticleSystem> ();
+
     }
 
 
@@ -82,7 +81,6 @@ public class PlayerHealth : MonoBehaviour {
 
             healthSlider.value = currentHealth;//every hit decrease the health bar
             audio.PlayOneShot(audio.clip); //sound when we're hited
-            // blood.Play();
         }
 
         if (currentHealth <= 0)
@@ -96,17 +94,20 @@ public class PlayerHealth : MonoBehaviour {
         //if player dies start Die Animation and enable movement
         GameManager.instance.PlayerHit(currentHealth);
         anim.SetTrigger("HeroDie");
-     //   characterController.enabled = false;
-     //   audio.PlayOneShot(audio.clip);
-       // blood.Play();
+        characterController.enabled = false;
+
     }
 
-    //public void PowerUpHealth() {
-    //	if (currentHealth <= 70) {
-    //		CurrentHealth += 30;
-    //	} else if (currentHealth < startingHealth) {
-    //		CurrentHealth = startingHealth;
-    //	}
-    //	healthSlider.value = currentHealth;
-    //}
+    public void PowerUpHealth() {
+
+        if (currentHealth <= 70) {
+            CurrentHealth += 30;
+
+        } else if (currentHealth < startingHealth) {
+
+            CurrentHealth = startingHealth;
+        }
+
+        healthSlider.value = currentHealth;
+    }
 }
