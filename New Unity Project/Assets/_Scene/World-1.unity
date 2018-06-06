@@ -5258,8 +5258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee19ba641d79b5946b4c755b3047945a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryUI: {fileID: 0}
-  miniMapUI: {fileID: 0}
+  inventoryUI: {fileID: 1102128547}
+  miniMapUI: {fileID: 1398505376}
 --- !u!114 &244030616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5271,7 +5271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8e4e8823f70024cbd60f78c2bb40c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemsParent: {fileID: 0}
+  itemsParent: {fileID: 268089231}
 --- !u!1 &245858858
 GameObject:
   m_ObjectHideFlags: 0
@@ -9485,7 +9485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26eb9083190d7eb48a601863383ee334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2224454}
 --- !u!20 &425261853
 Camera:
   m_ObjectHideFlags: 0
@@ -10741,6 +10741,16 @@ Prefab:
     - target: {fileID: 1673891621166958, guid: 5700fc37574c0264ea063f4b06323db2, type: 2}
       propertyPath: m_Name
       value: Hero 2.0 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82353103457722484, guid: 5700fc37574c0264ea063f4b06323db2,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82353103457722484, guid: 5700fc37574c0264ea063f4b06323db2,
+        type: 2}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5700fc37574c0264ea063f4b06323db2, type: 2}
@@ -26825,12 +26835,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8407eb48dd8ca7c4d9a4811f9943f870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  miniMapUI: {fileID: 0}
-  menu: {fileID: 0}
-  inventoryUI: {fileID: 0}
-  wikiUI: {fileID: 0}
-  healthBar: {fileID: 0}
+  pauseMenuUI: {fileID: 173141203}
+  miniMapUI: {fileID: 1398505376}
+  menu: {fileID: 1978406464}
+  inventoryUI: {fileID: 1102128547}
+  wikiUI: {fileID: 615736812}
+  healthBar: {fileID: 475924230}
 --- !u!4 &1602302209 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 4c5811eaee48d124395b271c6b77546e, type: 3}
