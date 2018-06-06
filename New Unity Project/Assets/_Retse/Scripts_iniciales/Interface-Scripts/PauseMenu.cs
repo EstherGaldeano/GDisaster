@@ -37,6 +37,7 @@ public class PauseMenu : MonoBehaviour {
         return GameIsPaused;
     }
    public void Resume() {
+        Debug.Log("resume");
         pauseMenuUI.SetActive(false);
         menu.SetActive(false);
         openMap();
@@ -60,6 +61,7 @@ public class PauseMenu : MonoBehaviour {
 
 
    public void LoadMenu() {
+        Debug.Log("settings");
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
     }

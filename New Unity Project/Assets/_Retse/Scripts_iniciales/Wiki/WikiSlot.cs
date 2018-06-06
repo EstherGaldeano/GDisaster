@@ -6,6 +6,7 @@ using UnityEngine;
 public class WikiSlot : MonoBehaviour {
 
     public Text text;
+    public Image icon;
 
     Monster monster;
     public void AddMonster(Monster newMonster)
@@ -22,5 +23,11 @@ public class WikiSlot : MonoBehaviour {
 
         text.text = "";
         text.enabled = false;
+    }
+
+    public void showMonster()
+    {
+        Debug.Log("imagen");
+        icon.sprite = monster.icon;
     }
 }
