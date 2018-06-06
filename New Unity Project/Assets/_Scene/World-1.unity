@@ -27229,8 +27229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - "Este oso apareci\xF3 con los mostruos"
-  - no escucha, solo baila, pero tampoco molesta
+  - "Esta osa apareci\xF3 con los mostruos"
+  - A diferencia de ellos no ataca, solo baila
   - ^^
   name: Cubito
 --- !u!65 &1697458662
@@ -34400,6 +34400,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114884321435140202, guid: 47c514a64bcf8fc49aa4c1ee243d2a25,
+        type: 2}
+      propertyPath: m_Text
+      value: Continuar (F)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 47c514a64bcf8fc49aa4c1ee243d2a25, type: 2}
