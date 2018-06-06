@@ -171,9 +171,16 @@ public class PlayerController : MonoBehaviour {
 
 
     void OnTriggerEnter(Collider other) {
-        if (other.gameObject.tag == "Portal")
+        if (other.gameObject.tag == "Portal") {
             SceneManager.LoadScene("World-1");
+        }
+
+        if (other.gameObject.tag == "Portal2") {
+            SceneManager.LoadScene("Demon Cave");
+        }
     }
+
+
 
 }
 
