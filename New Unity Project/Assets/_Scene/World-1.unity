@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1834530161}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.1648427, g: 0.22802742, b: 0.3052814, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -37373,15 +37373,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4467335455321760, guid: 00c6d89761faaef4ebc4e64819449e36, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -48.72757
+      value: -48.785
       objectReference: {fileID: 0}
     - target: {fileID: 4467335455321760, guid: 00c6d89761faaef4ebc4e64819449e36, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.8080573
+      value: -4.65
       objectReference: {fileID: 0}
     - target: {fileID: 4467335455321760, guid: 00c6d89761faaef4ebc4e64819449e36, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -136.44092
+      value: -136.67
       objectReference: {fileID: 0}
     - target: {fileID: 4467335455321760, guid: 00c6d89761faaef4ebc4e64819449e36, type: 2}
       propertyPath: m_LocalRotation.x
@@ -37439,6 +37439,28 @@ Prefab:
         type: 2}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467335455321760, guid: 00c6d89761faaef4ebc4e64819449e36, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.7600517
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467335455321760, guid: 00c6d89761faaef4ebc4e64819449e36, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.7600518
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467335455321760, guid: 00c6d89761faaef4ebc4e64819449e36, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.7600518
+      objectReference: {fileID: 0}
+    - target: {fileID: 136321910561548086, guid: 00c6d89761faaef4ebc4e64819449e36,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195817955153973420, guid: 00c6d89761faaef4ebc4e64819449e36,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c6d89761faaef4ebc4e64819449e36, type: 2}
