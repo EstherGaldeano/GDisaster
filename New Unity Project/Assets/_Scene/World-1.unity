@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1834530161}
-  m_IndirectSpecularColor: {r: 0.1648427, g: 0.22802742, b: 0.3052814, a: 1}
+  m_IndirectSpecularColor: {r: 0.17138596, g: 0.23498255, b: 0.3095054, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -37428,7 +37428,7 @@ Prefab:
     - target: {fileID: 136321910561548086, guid: 00c6d89761faaef4ebc4e64819449e36,
         type: 2}
       propertyPath: m_Height
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 136321910561548086, guid: 00c6d89761faaef4ebc4e64819449e36,
         type: 2}
@@ -37460,7 +37460,27 @@ Prefab:
     - target: {fileID: 195817955153973420, guid: 00c6d89761faaef4ebc4e64819449e36,
         type: 2}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54332088711345412, guid: 00c6d89761faaef4ebc4e64819449e36,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 136321910561548086, guid: 00c6d89761faaef4ebc4e64819449e36,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 54332088711345412, guid: 00c6d89761faaef4ebc4e64819449e36,
+        type: 2}
+      propertyPath: m_UseGravity
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54332088711345412, guid: 00c6d89761faaef4ebc4e64819449e36,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c6d89761faaef4ebc4e64819449e36, type: 2}
