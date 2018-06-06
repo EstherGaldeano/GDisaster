@@ -70,13 +70,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
             //if the user set "lockCursor" we check & properly lock the cursos
             if (lockCursor)
                 InternalLockUpdate();
+
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void InternalLockUpdate()
         {
             if(Input.GetKeyUp(KeyCode.Escape))
             {
-                m_cursorIsLocked = false;
+               m_cursorIsLocked = false;
             }
             else if(Input.GetMouseButtonUp(0))
             {
@@ -85,8 +87,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if (m_cursorIsLocked)
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+               Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = true;
             }
             else if (!m_cursorIsLocked)
             {

@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 26a8dc01901131049a027c2a2afd55ba
+timeCreated: 1528295197
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Character1_Head
+    100002: Character1_Hips
+    100004: Character1_LeftArm
+    100006: Character1_LeftFoot
+    100008: Character1_LeftFootIndex1
+    100010: Character1_LeftFootIndex2
+    100012: Character1_LeftForeArm
+    100014: Character1_LeftHand
+    100016: Character1_LeftHandIndex1
+    100018: Character1_LeftHandIndex2
+    100020: Character1_LeftHandIndex3
+    100022: Character1_LeftHandMiddle1
+    100024: Character1_LeftHandMiddle2
+    100026: Character1_LeftHandMiddle3
+    100028: Character1_LeftHandRing1
+    100030: Character1_LeftHandRing2
+    100032: Character1_LeftHandRing3
+    100034: Character1_LeftHandThumb1
+    100036: Character1_LeftHandThumb2
+    100038: Character1_LeftHandThumb3
+    100040: Character1_LeftLeg
+    100042: Character1_LeftShoulder
+    100044: Character1_LeftToeBase
+    100046: Character1_LeftUpLeg
+    100048: Character1_Neck
+    100050: Character1_RightArm
+    100052: Character1_RightFoot
+    100054: Character1_RightFootIndex1
+    100056: Character1_RightFootIndex2
+    100058: Character1_RightForeArm
+    100060: Character1_RightHand
+    100062: Character1_RightHandIndex1
+    100064: Character1_RightHandIndex2
+    100066: Character1_RightHandIndex3
+    100068: Character1_RightHandMiddle1
+    100070: Character1_RightHandMiddle2
+    100072: Character1_RightHandMiddle3
+    100074: Character1_RightHandRing1
+    100076: Character1_RightHandRing2
+    100078: Character1_RightHandRing3
+    100080: Character1_RightHandThumb1
+    100082: Character1_RightHandThumb2
+    100084: Character1_RightHandThumb3
+    100086: Character1_RightLeg
+    100088: Character1_RightShoulder
+    100090: Character1_RightToeBase
+    100092: Character1_RightUpLeg
+    100094: Character1_Spine
+    100096: Character1_Spine1
+    100098: Character1_Spine2
+    100100: eyebrows
+    100102: jaw
+    100104: knife1
+    100106: //RootNode
+    100108: rope_01
+    100110: rope_02
+    100112: rope_03
+    400000: Character1_Head
+    400002: Character1_Hips
+    400004: Character1_LeftArm
+    400006: Character1_LeftFoot
+    400008: Character1_LeftFootIndex1
+    400010: Character1_LeftFootIndex2
+    400012: Character1_LeftForeArm
+    400014: Character1_LeftHand
+    400016: Character1_LeftHandIndex1
+    400018: Character1_LeftHandIndex2
+    400020: Character1_LeftHandIndex3
+    400022: Character1_LeftHandMiddle1
+    400024: Character1_LeftHandMiddle2
+    400026: Character1_LeftHandMiddle3
+    400028: Character1_LeftHandRing1
+    400030: Character1_LeftHandRing2
+    400032: Character1_LeftHandRing3
+    400034: Character1_LeftHandThumb1
+    400036: Character1_LeftHandThumb2
+    400038: Character1_LeftHandThumb3
+    400040: Character1_LeftLeg
+    400042: Character1_LeftShoulder
+    400044: Character1_LeftToeBase
+    400046: Character1_LeftUpLeg
+    400048: Character1_Neck
+    400050: Character1_RightArm
+    400052: Character1_RightFoot
+    400054: Character1_RightFootIndex1
+    400056: Character1_RightFootIndex2
+    400058: Character1_RightForeArm
+    400060: Character1_RightHand
+    400062: Character1_RightHandIndex1
+    400064: Character1_RightHandIndex2
+    400066: Character1_RightHandIndex3
+    400068: Character1_RightHandMiddle1
+    400070: Character1_RightHandMiddle2
+    400072: Character1_RightHandMiddle3
+    400074: Character1_RightHandRing1
+    400076: Character1_RightHandRing2
+    400078: Character1_RightHandRing3
+    400080: Character1_RightHandThumb1
+    400082: Character1_RightHandThumb2
+    400084: Character1_RightHandThumb3
+    400086: Character1_RightLeg
+    400088: Character1_RightShoulder
+    400090: Character1_RightToeBase
+    400092: Character1_RightUpLeg
+    400094: Character1_Spine
+    400096: Character1_Spine1
+    400098: Character1_Spine2
+    400100: eyebrows
+    400102: jaw
+    400104: knife1
+    400106: //RootNode
+    400108: rope_01
+    400110: rope_02
+    400112: rope_03
+    7400000: Walk
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

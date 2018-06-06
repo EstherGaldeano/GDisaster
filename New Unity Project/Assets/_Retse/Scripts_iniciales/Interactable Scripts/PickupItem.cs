@@ -4,8 +4,18 @@ using UnityEngine;
 
 public class PickupItem : Interactable {
 
+    public Item item;
     public override void Interact()
     {
-        Debug.Log("Soy un cubiObjeto!");
+        base.Interact();
+
+        PickUp();
+    }
+
+    void PickUp()
+    {
+        Debug.Log("add " + item.name);
+        Inventory.instance.Add(item);
+        Destroy(gameObject);
     }
 }

@@ -5,8 +5,6 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour {
 
-    //[SerializeField]
-    // private float moveSpeed = 10.0f;
     [SerializeField]
     private LayerMask layerMask;
 
@@ -22,8 +20,6 @@ public class PlayerController : MonoBehaviour {
     void Start() {
 
         characterController = GetComponent<CharacterController>();
-        //    fireTrail = GameObject.FindWithTag ("Fire") as GameObject;
-        //	fireTrail.SetActive (false);
         anim = GetComponent<Animator>();
         swordColliders = GetComponentsInChildren<BoxCollider> ();
     }
@@ -31,24 +27,26 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
+        //movements of the player when is walking or when we use inputs
         if (!GameManager.instance.GameOver) {
 
             float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
 
             Vector3 moveDirection = new Vector3(horizontal, 0, vertical);
-
-          //  characterController.SimpleMove(moveDirection * moveSpeed);
             
+            //walk movement
             if (moveDirection == Vector3.zero) {
-                anim.SetBool("IsWalking", false);
 
+                anim.SetBool("IsWalking", false);
                
             } else {
+
                 anim.SetBool("IsWalking", true);
 
             }
 
+            //block
             if (Input.GetMouseButtonDown(1)) {
                 anim.SetBool("BlockPressed", true);
                 anim.Play("HandedBlock");
@@ -57,14 +55,18 @@ public class PlayerController : MonoBehaviour {
                 anim.SetBool("BlockPressed", false);
             }
 
+            //attack
             if (Input.GetMouseButtonDown(0)) {
                 anim.Play("DoubleChop");
             }
+
+            //attack2
             if ((Input.GetAxis("Mouse ScrollWheel") > 0f)|| (Input.GetAxis("Mouse ScrollWheel") < 0f)) {
                 anim.Play("SpinAttack");
                
             }
 
+            //jump
             if (Input.GetKeyDown("space")) {              
                 anim.Play("Jump");
 
@@ -127,7 +129,7 @@ public class PlayerController : MonoBehaviour {
     #endregion
 
     void FixedUpdate() {
-
+        //code for the movement
         if (!GameManager.instance.GameOver) {
 
             RaycastHit hit;
@@ -163,26 +165,6 @@ public class PlayerController : MonoBehaviour {
                 weapon.enabled = false;
             }
         }
-    /*
-        public void SpeedPowerUp() {
-
-            StartCoroutine (fireTrailRoutine ());
-        }
-
-        IEnumerator fireTrailRoutine() {
-
-            fireTrail.SetActive (true);
-            moveSpeed = 10f;
-            yield return new WaitForSeconds (10f);
-            moveSpeed = 6f;
-            fireTrailParticles = fireTrail.GetComponent<ParticleSystem> ();
-            var em = fireTrailParticles.emission;
-            em.enabled = false;
-            yield return new WaitForSeconds (3f);
-            em.enabled = true;
-            fireTrail.SetActive (false);
-
-        }*/
-
-    }
+ 
+}
 

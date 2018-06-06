@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/Menu.unity
+    path: Assets/_Scene/Menu.unity
     guid: 0db1629ad7cd30d4291bdd6a0da722e8
   - enabled: 1
-    path: Assets/Scene/World-1.unity
-    guid: 0ccac1c55d63b3c42880f9f5577deb0d
+    path: Assets/_Scene/Habitacion.unity
+    guid: 74207b1e91387a94b8dd516dd21d94da
   - enabled: 1
-    path: Assets/Scene/Primera-Mazmorra.unity
+    path: Assets/_Scene/Primera-Mazmorra.unity
     guid: e50ea04cc1d1f2a46a67be58afd93a21
+  - enabled: 1
+    path: Assets/_Scene/World-1.unity
+    guid: 0ccac1c55d63b3c42880f9f5577deb0d

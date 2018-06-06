@@ -1,0 +1,74 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 25.06.2016 12:30:21
+
+newmtl Fantasy_Demon__Caves_V2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\Fantasy_Demon_Cave_V2_Atlas.tga
+	map_Kd D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\Fantasy_Demon_Cave_V2_Atlas.tga
+
+newmtl Fantasy_Demon__Caves_V2_alpha
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\Fantasy_Demon_Cave_V2_Atlas_Alpha.tga
+	map_Kd D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\Fantasy_Demon_Cave_V2_Atlas_Alpha.tga
+	map_d D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\Fantasy_Demon_Cave_V3_Atlas_Alpha.tga
+
+newmtl Lava
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\Lava.tga
+	map_Kd D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\Lava.tga
+
+newmtl leaf_alpha
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\Fantasy_Demon_Cave_V2_Atlas_Alpha.tga
+	map_Kd D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\Fantasy_Demon_Cave_V2_Atlas_Alpha.tga
+	map_d D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\Fantasy_Demon_Cave_V2_Atlas_Alpha.tga
+
+newmtl bush
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\bush.tga
+	map_Kd D:\Project\3dFancy\Upload Bitgem3d\Fantasy Demon Caves\Fantasy Demon Caves\Textures\bush.tga

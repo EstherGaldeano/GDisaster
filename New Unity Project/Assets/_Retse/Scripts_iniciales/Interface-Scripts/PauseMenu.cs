@@ -55,7 +55,7 @@ public class PauseMenu : MonoBehaviour {
         hideHP();
         Time.timeScale = 0f;
         GameIsPaused = true;
-
+        Debug.Log("muestra menu");
     }
 
 

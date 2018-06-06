@@ -187,7 +187,12 @@ ModelImporter:
     13700010: pupils
     13700012: sword_left
     13700014: sword_right
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: barbarian_girl
+    second: {fileID: 2100000, guid: 40fafaaaaac9742e086bce50effb923c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
