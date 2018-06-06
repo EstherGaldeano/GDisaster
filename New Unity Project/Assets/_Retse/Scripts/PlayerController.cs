@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
 
         characterController = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-        swordColliders = GetComponentsInChildren<BoxCollider> ();
+        swordColliders = GetComponentsInChildren<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -35,12 +35,12 @@ public class PlayerController : MonoBehaviour {
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
 
             Vector3 moveDirection = new Vector3(horizontal, 0, vertical);
-            
+
             //walk movement
             if (moveDirection == Vector3.zero) {
 
                 anim.SetBool("IsWalking", false);
-               
+
             } else {
 
                 anim.SetBool("IsWalking", true);
@@ -62,42 +62,38 @@ public class PlayerController : MonoBehaviour {
             }
 
             //attack2
-            if ((Input.GetAxis("Mouse ScrollWheel") > 0f)|| (Input.GetAxis("Mouse ScrollWheel") < 0f)) {
+            if ((Input.GetAxis("Mouse ScrollWheel") > 0f) || (Input.GetAxis("Mouse ScrollWheel") < 0f)) {
                 anim.Play("SpinAttack");
-               
+
             }
 
             //jump
-            if (Input.GetKeyDown("space")) {              
+            if (Input.GetKeyDown("space")) {
                 anim.Play("Jump");
 
-        }
+            }
 
 
 
 
-        interaccion();
+            interaccion();
         }
     }
 
     #region inventario
 
-    private void interaccion()
-    {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
+    private void interaccion() {
+        if (Input.GetKeyDown(KeyCode.T)) {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
             Debug.Log("interactuando");
 
-            if (Physics.Raycast(ray, out hit, 5))
-            {
+            if (Physics.Raycast(ray, out hit, 5)) {
                 //check interactible
                 Interactible interactible = hit.collider.GetComponent<Interactible>();
 
-                if (interactible != null)
-                {
+                if (interactible != null) {
                     SetFocus(interactible);
                 }
             }
@@ -105,12 +101,9 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    void SetFocus(Interactible newFocus)
-    {
-        if (newFocus != focus)
-        {
-            if (focus != null)
-            {
+    void SetFocus(Interactible newFocus) {
+        if (newFocus != focus) {
+            if (focus != null) {
                 focus.DeFocused();
             }
 
@@ -120,10 +113,8 @@ public class PlayerController : MonoBehaviour {
         newFocus.OnFocused(transform);
     }
 
-    void RemoveFocus()
-    {
-        if (focus != null)
-        {
+    void RemoveFocus() {
+        if (focus != null) {
             focus.DeFocused();
         }
         focus = null;
@@ -155,25 +146,31 @@ public class PlayerController : MonoBehaviour {
 
 
     }
-        //we only hurt the enemy at this moment of the animation
+    //we only hurt the enemy at this moment of the animation
 
-        public void BeginAttack() {
-            foreach (var weapon in swordColliders) {
-                weapon.enabled = true;
-            }
+    public void BeginAttack() {
+        foreach (var weapon in swordColliders) {
+            weapon.enabled = true;
         }
+    }
 
-        public void EndAttack() {
-            foreach (var weapon in swordColliders) {
-                weapon.enabled = false;
-            }
+    public void EndAttack() {
+        foreach (var weapon in swordColliders) {
+            weapon.enabled = false;
         }
+    }
 
 
     void OnTriggerEnter(Collider other) {
-        if (other.gameObject.tag == "Portal")
+        if (other.gameObject.tag == "Portal") {
             SceneManager.LoadScene("World-1");
-    }
+        }
 
+        if (other.gameObject.tag == "Portal2") {
+            SceneManager.LoadScene("Demon Cave");
+        }
+
+    }
 }
+
 

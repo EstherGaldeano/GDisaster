@@ -12,6 +12,7 @@ TagManager:
   - PlayerWeapon
   - Interactable Object
   - Enemy
+  - Portal2
   layers:
   - Default
   - TransparentFX
