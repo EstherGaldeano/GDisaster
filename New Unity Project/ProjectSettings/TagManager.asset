@@ -13,6 +13,8 @@ TagManager:
   - Interactable Object
   - Enemy
   - Portal2
+  - Ice
+  - Vuelta
   layers:
   - Default
   - TransparentFX

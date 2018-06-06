@@ -176,6 +176,11 @@ public class PlayerController : MonoBehaviour {
         }
 
 
+        if (other.gameObject.tag == "Vuelta") {
+            SceneManager.LoadScene("World-1");
+        }
+
+
     }
 }
 
