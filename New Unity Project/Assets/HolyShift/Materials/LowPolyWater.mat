@@ -116,7 +116,7 @@ Material:
     - _InvFade: 0.628783
     - _InvFadeDepthFade: 0.07197756
     - _InvFadeFoam: 0.1217
-    - _MaxTreshold: 0.5
+    - _MaxTreshold: 0
     - _MaxTreshould: 0.5
     - _NormalsDisplacement: 0
     - _ReflDistort: 0.9267696
@@ -140,7 +140,7 @@ Material:
     - WaveSpeed: {r: 1.086165, g: 4.440575, b: 12.105146, a: -3.0206447}
     - _AnimationDirection: {r: 0, g: 4, b: 2, a: -1}
     - _AnimationTiling: {r: 0.04582553, g: 0.0182, b: 0.045714468, a: 0.027129691}
-    - _BaseColor: {r: 0.1124027, g: 0.44598377, b: 0.72794116, a: 0.922}
+    - _BaseColor: {r: 0.25513622, g: 0.599031, b: 0.8897059, a: 0.378}
     - _BumpDirection: {r: 2, g: 1, b: -1, a: 1.5}
     - _BumpMap_ST: {r: 1, g: 1, b: 0, a: 0}
     - _BumpTiling: {r: 0.05, g: 0.05, b: 0.05, a: 0.05}
