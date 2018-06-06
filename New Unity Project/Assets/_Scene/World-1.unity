@@ -743,7 +743,7 @@ BoxCollider:
   m_GameObject: {fileID: 61016704}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.4, y: 1, z: 0.7}
   m_Center: {x: -0.9, y: 0, z: 0}
@@ -770,7 +770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &75892566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1476,6 +1476,10 @@ Prefab:
         type: 2}
       propertyPath: m_Radius
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352739159588572, guid: 9648ee201bc54794688a5608e3bb6848, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9648ee201bc54794688a5608e3bb6848, type: 2}
@@ -20826,7 +20830,7 @@ BoxCollider:
   m_GameObject: {fileID: 1145564007}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.4, y: 1, z: 0.7}
   m_Center: {x: -0.9, y: 0, z: 0}
@@ -27194,7 +27198,7 @@ GameObject:
   - component: {fileID: 1697458662}
   - component: {fileID: 1697458661}
   m_Layer: 0
-  m_Name: RectAngulo
+  m_Name: Cubi
   m_TagString: Interactable Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27224,8 +27228,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90de5c6b9281dbb44b49acb43d4260c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
-  name: 
+  dialogue:
+  - "Este oso apareci\xF3 con los mostruos"
+  - no escucha, solo baila, pero tampoco molesta
+  - ^^
+  name: Cubito
 --- !u!65 &1697458662
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35114,7 +35121,7 @@ GameObject:
   - component: {fileID: 1902103357}
   - component: {fileID: 1902103356}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: CubiLargo
   m_TagString: Interactable Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35144,8 +35151,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90de5c6b9281dbb44b49acb43d4260c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
-  name: 
+  dialogue:
+  - Hola desconocid@
+  - "Podr\xEDas ayudarnos a liberar este mundo de Mostruos?"
+  - Nostros somos simples cubos
+  - Y no podemos hacer nada
+  - "Ay\xFAdanos por favor :("
+  name: CubiLargo
 --- !u!65 &1902103357
 BoxCollider:
   m_ObjectHideFlags: 0
