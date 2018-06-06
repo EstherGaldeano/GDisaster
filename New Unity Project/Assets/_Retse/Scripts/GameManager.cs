@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
 
     [SerializeField] GameObject player;
+    [SerializeField]
+    GameObject enemy;
 
     //[SerializeField]
     //GameObject[] spawnPoints;
@@ -37,8 +39,8 @@ public class GameManager : MonoBehaviour {
     //[SerializeField]
     //int finalLevel = 20;
 
-    
-	private bool gameOver = false;
+
+    private bool gameOver = false;
 
     //private int currentLevel;
     //private float generatedSpawnTime = 1;
@@ -52,7 +54,7 @@ public class GameManager : MonoBehaviour {
     private List<EnemyHealth> enemies = new List<EnemyHealth>();
     private List<EnemyHealth> killedEnemies = new List<EnemyHealth>();
 
-
+  
 
     public bool GameOver {
       get { return gameOver; }
@@ -72,6 +74,10 @@ public class GameManager : MonoBehaviour {
     public void KilledEnemy(EnemyHealth enemy) {
         killedEnemies.Add(enemy);
     }
+
+
+
+
 
     //public void RegisterPowerUp() {
     //    powerups++;
