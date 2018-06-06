@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970524bd4f44ae54290aa0e76308dfdf, type: 3}
   m_Name: The Cube
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 0}
+  name: Cuboso
+  icon: {fileID: 21300000, guid: 08ebd6dafa9903f4781f0f95e76cac37, type: 3}

@@ -6,7 +6,7 @@ public class WikiUI : MonoBehaviour {
 
     public Transform itemsParent;
 
-    WikiRegisters wiki;
+    WikiRegisters wiki;   
 
     WikiSlot[] slots;
     // Use this for initialization
@@ -16,6 +16,19 @@ public class WikiUI : MonoBehaviour {
         wiki.onItemChangedCallback += UpdateUI;
 
         slots = itemsParent.GetComponentsInChildren<WikiSlot>();
+
+        UpdateUI();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        /*if (Input.GetButtonDown("Inventory"))
+        {
+            
+                inventoryUI.SetActive(!inventoryUI.activeSelf);
+            
+        } */
     }
 
     void UpdateUI()

@@ -16,9 +16,9 @@ public class WikiRegisters : MonoBehaviour {
     public Monster m8;
     public Monster m9;
 
-    public delegate void OnItemChanged();
-    public OnItemChanged onItemChangedCallback;
-    public List<Monster> monsters = new List<Monster>();
+    
+    
+    
 
     void Awake () {
         if (instance != null)
@@ -27,8 +27,12 @@ public class WikiRegisters : MonoBehaviour {
             return;
         }
         instance = this;
-        
+        Add();
     }
+
+    public delegate void OnItemChanged();
+    public OnItemChanged onItemChangedCallback;
+    public List<Monster> monsters = new List<Monster>();
 
     public void Add()
     {
@@ -76,6 +80,10 @@ public class WikiRegisters : MonoBehaviour {
         {
             monsters.Add(m9);
         }
+
+        
+            onItemChangedCallback.Invoke();
+        
     }
 
 }
