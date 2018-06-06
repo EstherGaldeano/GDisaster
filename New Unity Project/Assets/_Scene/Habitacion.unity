@@ -310,7 +310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &130081578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,6 +611,7 @@ GameObject:
   - component: {fileID: 173305141}
   - component: {fileID: 173305140}
   - component: {fileID: 173305139}
+  - component: {fileID: 173305147}
   m_Layer: 0
   m_Name: Hero 2.0 1 (1)
   m_TagString: Player
@@ -874,8 +875,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 173305138}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.529, y: 16.866, z: 13.449}
+  m_LocalRotation: {x: -8.519646e-17, y: 0.75625, z: 0.000000090152014, w: 0.6542828}
+  m_LocalPosition: {x: -20.323427, y: 16.866, z: 17.160515}
   m_LocalScale: {x: 3.6623104, y: 3.6623118, z: 3.6623118}
   m_Children:
   - {fileID: 1063029132}
@@ -888,7 +889,18 @@ Transform:
   - {fileID: 1550240090}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 98.269005, z: 0}
+--- !u!114 &173305147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 173305138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7ffe5939749544e98788997c2faef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &182428850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,7 +1069,7 @@ MonoBehaviour:
   - Hola Aloy ^^
   - Como ya sabes, el mundo se ha ido al traste
   - Pero tienes la oportunidad de salvarlo
-  - Solo tienes que pulsar A
+  - Solo tienes que pulsar Z
   - "De lo contrario deber\xE1s pulsar X"
   - "Lo salvar\xE1s, no?"
   - Eh, espera
@@ -3451,6 +3463,51 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114884321435140202, guid: 47c514a64bcf8fc49aa4c1ee243d2a25,
+        type: 2}
+      propertyPath: m_Text
+      value: Continuar (F)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114050875734649004, guid: 47c514a64bcf8fc49aa4c1ee243d2a25,
+        type: 2}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114050875734649004, guid: 47c514a64bcf8fc49aa4c1ee243d2a25,
+        type: 2}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224486914979988346, guid: 47c514a64bcf8fc49aa4c1ee243d2a25,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.4748211
+      objectReference: {fileID: 0}
+    - target: {fileID: 224486914979988346, guid: 47c514a64bcf8fc49aa4c1ee243d2a25,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.474821
+      objectReference: {fileID: 0}
+    - target: {fileID: 224486914979988346, guid: 47c514a64bcf8fc49aa4c1ee243d2a25,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.474821
+      objectReference: {fileID: 0}
+    - target: {fileID: 224486914979988346, guid: 47c514a64bcf8fc49aa4c1ee243d2a25,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -51.588
+      objectReference: {fileID: 0}
+    - target: {fileID: 114050875734649004, guid: 47c514a64bcf8fc49aa4c1ee243d2a25,
+        type: 2}
+      propertyPath: m_FontData.m_AlignByGeometry
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114050875734649004, guid: 47c514a64bcf8fc49aa4c1ee243d2a25,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 47c514a64bcf8fc49aa4c1ee243d2a25, type: 2}
