@@ -38,27 +38,32 @@ public class EnemyAttack : MonoBehaviour {
    //**player doesn't have collider, if she has, this doesn't work, control the radius
 
         if (Vector3.Distance(transform.position, player.transform.position) < range) {
+
                 playerInRange = true;
-            } else {
+
+        } else {
+
                 playerInRange = false;
-            }
+        }
 
     }
 
-    //attack coroutine
+  //attack coroutine
 IEnumerator attack() {
 
-    if (playerInRange && !GameManager.instance.GameOver && enemyHealth.IsAlive && enemyHealth.Getlife>30) {
+    if (playerInRange && !GameManager.instance.GameOver && enemyHealth.IsAlive 
+        && enemyHealth.Getlife>30) {
 
         anim.Play("Attack");
         yield return new WaitForSeconds(timeBetweenAttacks);
     }
 
-        if (playerInRange && !GameManager.instance.GameOver && enemyHealth.IsAlive && enemyHealth.Getlife < 30) {
+    if (playerInRange && !GameManager.instance.GameOver && enemyHealth.IsAlive 
+        && enemyHealth.Getlife < 30) {
 
-            anim.Play("HeavyAttack");
-            yield return new WaitForSeconds(timeBetweenAttacks);
-        }
+        anim.Play("HeavyAttack");
+        yield return new WaitForSeconds(timeBetweenAttacks);
+    }
 
         yield return null;
     StartCoroutine(attack());
