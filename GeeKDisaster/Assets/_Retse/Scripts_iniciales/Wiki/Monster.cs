@@ -9,5 +9,7 @@ public class Monster : ScriptableObject {
     // Name of the item
     new public string name = "New Item";
     // Item icon
-    public Sprite icon = null;              
+    public Sprite icon = null;
+    // Description
+    new public string desc = "Here goes the description";
 }

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WikiRegisters : MonoBehaviour {
+public class WikiRegisters : MonoBehaviour
+{
 
     public static WikiRegisters instance;
 
@@ -16,23 +17,25 @@ public class WikiRegisters : MonoBehaviour {
     public Monster m8;
     public Monster m9;
 
-    public delegate void OnItemChanged();
-    public OnItemChanged onItemChangedCallback;
-    public List<Monster> monsters = new List<Monster>();
-
-    void Awake () {
+    void Awake()
+    {
         if (instance != null)
         {
             //Debug.LogWarning("More than one instance of Inventory found!");
             return;
         }
         instance = this;
-        
+        Add();
     }
+
+    public delegate void OnItemChanged();
+    public OnItemChanged onItemChangedCallback;
+    public List<Monster> monsters = new List<Monster>();
 
     public void Add()
     {
-        if(m1 != null)
+        //if the gameobject is not null is added to the list
+        if (m1 != null)
         {
             monsters.Add(m1);
         }
@@ -76,6 +79,10 @@ public class WikiRegisters : MonoBehaviour {
         {
             monsters.Add(m9);
         }
+
+
+        onItemChangedCallback.Invoke();
+
     }
 
 }
