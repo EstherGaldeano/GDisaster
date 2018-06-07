@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour {
     //GameObject ranger;
     //[SerializeField]
     //GameObject soldier;
-    //[SerializeField]
-    //GameObject arrow;
+    [SerializeField]
+    GameObject arrow;
     //[SerializeField]
     //GameObject healthPowerUp;
     //[SerializeField]
@@ -83,9 +83,9 @@ public class GameManager : MonoBehaviour {
     //    powerups++;
     //}
 
-    //public GameObject Arrow {
-    //    get {return arrow; }
-    //}
+    public GameObject Arrow {
+        get { return arrow; }
+    }
 
 
     void Awake() {
