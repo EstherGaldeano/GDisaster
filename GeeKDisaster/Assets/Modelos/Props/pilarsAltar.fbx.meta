@@ -22,6 +22,8 @@ ModelImporter:
     3300002: Cube.001
     4300000: Cube.001
     4300002: Cube
+    6400000: Cube
+    6400002: Cube.001
     10800000: Lamp
   externalObjects:
   - first:
@@ -70,7 +72,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -81,6 +83,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
