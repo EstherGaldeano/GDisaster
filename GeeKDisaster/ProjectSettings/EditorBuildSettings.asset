@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scene/Menu.unity
     guid: 0db1629ad7cd30d4291bdd6a0da722e8
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scene/Habitacion.unity
     guid: 74207b1e91387a94b8dd516dd21d94da
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scene/Primera-Mazmorra.unity
     guid: e50ea04cc1d1f2a46a67be58afd93a21
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scene/GameOver.unity
     guid: 21f796965bd463b4f971ccb601aea71a
   - enabled: 0
