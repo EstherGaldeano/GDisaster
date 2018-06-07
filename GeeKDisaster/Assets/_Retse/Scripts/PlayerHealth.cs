@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.Assertions;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -95,6 +96,7 @@ public class PlayerHealth : MonoBehaviour {
         GameManager.instance.PlayerHit(currentHealth);
         anim.SetTrigger("HeroDie");
         characterController.enabled = false;
+        SceneManager.LoadScene("GameOver");
 
     }
 
