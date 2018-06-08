@@ -71,7 +71,7 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 1
     m_Settings:
-      focusDistance: 3.8
+      focusDistance: 5.6
       aperture: 1.8
       focalLength: 50
       useCameraFov: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
       logMin: -8
       logMax: 4
   bloom:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       bloom:
         intensity: 0.5
@@ -112,20 +112,20 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       tonemapping:
-        tonemapper: 2
-        neutralBlackIn: 0.016
-        neutralWhiteIn: 10.5
-        neutralBlackOut: -0.017
-        neutralWhiteOut: 8.54
-        neutralWhiteLevel: 2.7
-        neutralWhiteClip: 8.34
+        tonemapper: 1
+        neutralBlackIn: 0.038
+        neutralWhiteIn: 9.7
+        neutralBlackOut: -0.016
+        neutralWhiteOut: 8.9
+        neutralWhiteLevel: 8.2
+        neutralWhiteClip: 8.07
       basic:
-        postExposure: 0
-        temperature: 0
-        tint: 0
+        postExposure: 0.4
+        temperature: 8
+        tint: 2
         hueShift: 0
-        saturation: 1.27
-        contrast: 1.12
+        saturation: 1.52
+        contrast: 1.07
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
